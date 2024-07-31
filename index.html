@@ -8,22 +8,21 @@
     <script>
         tailwind.config = {
           theme: {screens: {
-        'sm': '640px',
-        // => @media (min-width: 640px) { ... }
-  
-        'md': '768px',
-        // => @media (min-width: 768px) { ... }
-  
-        'lg': '1024px',
-        // => @media (min-width: 1024px) { ... }
-  
-        'xl': '1280px',
-        // => @media (min-width: 1280px) { ... }
-  
-        '2xl': '1536px',
-        // => @media (min-width: 1536px) { ... }
-      },
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
 
+      'md': '728px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    } ,
             extend: {
               colors: {
                 clifford: '#da373d',
@@ -34,45 +33,42 @@
       </script>
 </head>
 <body>
-    <nav class="h-20 flex items-center justify-between px-6 lg:px-36">
-        <div class="flex gap-10">
-            <h1 class="text-6xl text-purple-900 font-bold ">
-                Logo
+    <div  class="max-w-7xl mx-auto px-10">
+        <nav class="flex justify-between items-center h-20 px-0 lg:px-10 ">
+            <div class="flex gap-12 items-center h-20">
+                <h1 class="text-3xl lg:text-5xl font-bold text-purple-900">
+                    Logo
+                </h1>
+                <ul class="hidden md:flex gap-6">
+                    <li class="text-black font-semi bold">Home</li>
+                    <li class="text-gray-500 font-semi bold">About</li>
+                    <li class="text-gray-500 font-semi bold">Services</li> 
+                    <li class="text-gray-500 font-semi bold">Portfolio</li>
+                    <li class="text-gray-500 font-semi bold">Pricing</li>
+                </ul>
+            </div>   
+                <button class="bg-purple-600 rounded-md px-4 py-2 text-sm lg:text-lg text-white  ">
+                    Contact Us
+                </button>
+        </nav>
+        <main class="flex flex-col-reverse lg:flex-row ">
+            <div class="lg:w-[550px] flex flex-col gap-5 items-center lg:items-start justify-center lg:h-[500px] xl:h-[600px] mt-16 lg:mt-0 px-0 lg:px-10">
+            <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold text-center lg:text-start  text-purple-900">
+                We Help You <br> <span class="text-purple-600">Cush</span> Your <br>Competition
             </h1>
-            <ul class="flex items-center h-20 lg:gap-5 hidden lg:flex ">
-                <li class="text-xl font-semi bold text-black ">Home</li>
-                <li class="text-xl font-semi bold text-gray-400 ">About</li>
-                <li class="text-xl font-semi bold text-gray-400">Services</li> 
-                <li class="text-xl font-semi bold text-gray-400">Portfolio</li>
-                <li class="text-xl font-semi bold text-gray-400">Pricing</li>
-            </ul>
-        </div>   
-            <button class="bg-purple-700 rounded-md px-7 py-3 text-white font-semi bold ">
-                Contact Us
+            <p class="text-center lg:text-start">
+                Build trust to connect your brand to <br>billions of users and grow your revenue <br>through SEO
+            </p>
+            <button class="bg-purple-600 px-4 lg:px-6 py-2 text-white text-sm rounded-md">
+                See Our Services
             </button>
-    </nav>
-    <section class="flex items-center px-36  lg:gap-0" >
-        <div class="flex  flex-col justify-center items-start lg:h-[700px] pt-12 ">
-            <div class="flex flex-col gap-10">
-                <h1 class="text-purple-900 text-6xl font-bold ">
-                    We Help You <br> 
-                    <span class="text-purple-700">
-                    Crush Your <br>
-                    </span> Competition
-                </h1 >
-                <p class="text-gray-600 font-semi bold text-lg ">
-                    Build trust to connect your brand to <br>billions of users and grow your revenue <br> through SEO.
-                </p>
-                <div>
-                    <button class="text-white bg-purple-700 px-6 py-3 rounded-md ">
-                        See our services
-                    </button>
-                </div>
             </div>
-        </div>
-        <div class="pt-12 absolute  right-36 bottom-0">
-           <img class="w-[950px]" src="./heroimg.png" alt="image">
-        </div>
-    </section>
+            <div class="max-w-[70%] xl:w-[800px] mx-auto xl:absolute bottom-0 right-0">
+            <img src="./heroimg.png" alt="image"  class="w-[800px]">
+            </div>
+        </main>
+    </div>
+   
+
 </body>
 </html>
